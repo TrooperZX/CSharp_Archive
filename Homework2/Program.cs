@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число для постраения таблицы умножения:");
+            Console.WriteLine("Please enter positive integer number:");
 
             var InputNumber = 0;
             var Input = Console.ReadLine();
@@ -13,7 +13,7 @@
 
             if (userInput)
             {
-                Console.WriteLine($"Введенное значение - число и равно {InputNumber}.Построение таблицы...");
+                Console.WriteLine($"You input number is \"{InputNumber}\".Forming multiplication table ...");
 
                 for (int X = 0; X <= 10; X++)
                 {
@@ -23,10 +23,10 @@
 
             else
             {
-                Console.WriteLine("Введенное значение - не число");
+                Console.WriteLine("Your input are not positive integer number ");
             }
 
-            Console.WriteLine("Конец программы");
+            Console.WriteLine("End of program");
         }
     }
 }
