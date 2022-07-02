@@ -4,21 +4,21 @@
     {
         static void Main(string[] args)
         {
-            var Farm1 = new FactoryUnitMilitia("Horns and Hooves");
-            var MilitiaUnit0_1 = Farm1.Create();
-            var MilitiaUnit0_2 = Farm1.Create();
+            var farm1 = new FactoryUnitMilitia("Horns and Hooves");
+            var militiaUnit0_1 = farm1.Create();
+            var militiaUnit0_2 = farm1.Create();
 
-            var Barrack1 = new FactoryUnitFootman("Form up!");
-            var FootmanUnit0_1 = Barrack1.Create();
+            var barrack1 = new FactoryUnitFootman("Form up!");
+            var footmanUnit0_1 = barrack1.Create();
 
-            var TrainingGrounds1 = new FactoryUnitKnight("Giddy up!");
-            var KnightUnit0_1 = TrainingGrounds1.Create();
-            var KnightUnit0_2 = TrainingGrounds1.Create();
-            var KnightUnit0_3 = TrainingGrounds1.Create();
+            var trainingGrounds1 = new FactoryUnitKnight("Giddy up!");
+            var knightUnit0_1 = trainingGrounds1.Create();
+            var knightUnit0_2 = trainingGrounds1.Create();
+            var knightUnit0_3 = trainingGrounds1.Create();
 
             var RosterUnit = new Unit[]
             {
-            MilitiaUnit0_1,  KnightUnit0_1, FootmanUnit0_1, KnightUnit0_2, MilitiaUnit0_2, KnightUnit0_3
+            militiaUnit0_1,  knightUnit0_1, footmanUnit0_1, knightUnit0_2, militiaUnit0_2, knightUnit0_3
             };
             // Counter for roster upkeep, with counter "armyUpkeep".
             var armyUpkeep = 0;
